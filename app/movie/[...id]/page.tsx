@@ -7,7 +7,7 @@ const singleMovie= async({params}:{params:{id:string}})=>{
     return (
         <div className="w-full p-8">
             <div className="flex flex-col md:flex-row">
-                <Image src={`https://image.tmdb.org/t/p/origin${movie.backdrop_path || movie.poster_path}`}
+                <Image src={`https://image.tmdb.org/t/p/original/${movie.backdrop_path || movie.poster_path}`}
                     width={500}
                     height={300}
                     alt="movie pic"
