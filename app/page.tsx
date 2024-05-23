@@ -2,7 +2,6 @@ import Image from "next/image";
 import Movies from "@/components/movies";
 const api_key=process.env.API_KEY
 const Home = async({searchParams}:any)=> {
-  console.log("params::", searchParams , "genre::", searchParams.genre)
   const genre=searchParams? searchParams : 'top_rated'
 
   const data= await fetch(`https://api.themoviedb.org/3${genre==='fetchTopRated'?'/movie/top_rated':'/trending/all/week'}?api_key=${api_key}&language=en-US&page=1`)
