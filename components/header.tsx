@@ -13,7 +13,7 @@ return (
         <div className="flex items-center gap-2">
             <DarkModeSwitch/>
         <Link href="/" className="flex gap-1 items-center ">
-            <span className="text-xl bg-amber-500 rounded-lg font-bold px-2 py-1">IDMB</span>
+            <span className="text-xl bg-amber-500 rounded-lg font-bold px-2 py-1">MOVIE</span>
             <span className="hidden sm:inline">Clone</span>
         </Link>
         </div>
